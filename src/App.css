@@ -1,0 +1,460 @@
+#staricon{
+  color: rgb(152, 134, 71);
+}
+
+#button-delete{
+  color:rgb(167, 100, 100);
+}
+
+#button-info{
+  color:rgb(100, 118, 167);
+}
+
+#button-edit{
+  color:rgb(100, 167, 122);
+}  
+
+#button-notif{
+  color:rgb(119, 100, 167);
+} 
+
+#taskName-input, #taskDate-input{
+  margin: 5px
+}
+
+#popper-submit-button{
+  color:rgb(71, 106, 77);
+  margin-top: 2vw;
+}
+
+#popper-submit-button:hover{
+  background-color:rgb(168, 200, 173, 0.3);
+}
+
+#popper-cancel-button{
+  color:rgb(100, 56, 56);
+}
+
+#popper-cancel-button:hover{
+  background-color:rgb(205, 158, 158, 0.3);
+}
+
+#form-add-button{
+  color:rgb(72, 96, 72);
+}
+
+#popper-info{
+  max-width: 50vw;
+}
+
+#logo{
+  align-self: center;
+}
+
+#logo:hover{
+  animation: wobble-hor-bottom 1s linear both;
+}
+
+#form-add-button:hover{
+  background-color:rgb(180, 192, 180, 0.3);
+}
+
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-15px) rotate(-4deg);
+            transform: translateX(-15px) rotate(-4deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(6deg);
+            transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(-3.6deg);
+            transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(2.4deg);
+            transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(-1.2deg);
+            transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+
+
+#circle{
+  color: #222222;
+}
+
+#popper-date-input, #popper-name-input{
+  margin: 5px;
+}
+
+body{
+  background-color:#e0a969;
+}
+
+#header{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation: text-pop-up-top 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #a47239, 0 2px 0 #a47239, 0 3px 0 #a47239, 0 4px 0 #a47239, 0 5px 0 #ead6bf, 0 6px 0 #ead6bf, 0 7px 0 #ead6bf, 0 8px 0 #ead6bf, 0 9px 0 #ead6bf, 0 50px 30px #c88d4a;
+  }
+}
+
+
+
+/*mobile*/
+@media only screen and (max-width: 600px){
+
+  #header{
+    font-size: 45px;
+    margin: 30px 10px;
+  }
+
+  #logo{
+    font-size: 40px;
+  }
+
+  #tasks-card{
+    background-color:#ead6bf;
+    background: linear-gradient(0deg, rgb(209, 170, 126) 0%, rgba(234,214,191,1) 100%);    
+    margin: 15px;
+    padding: 10px;
+    width: 30vw;
+    box-shadow: 5px 10px 10px #a47239;
+  }
+
+  #circle{
+    font-size: 15px;
+  }
+
+  #button-add{
+    color: rgb(59, 51, 61);
+    font-size: 20px;
+    margin-top:20px;
+    margin-left: 35%;
+  }
+
+  #button-add:hover{
+    background-color: #e4b279;
+    transition: 0.7s;
+  }
+  
+  #tasks-card-name{
+    font-size: 7vw;
+    font-family: 'Brush Script MT';
+  }
+
+  #tasks-card-date{
+    font-size: 3vw;
+    margin: 5px;
+  }
+
+  #icon-edit, #icon-delete, #icon-notifOff, #icon-notifOn, #icon-info{
+    max-width: 4vw;
+  }  
+  
+
+  #button-notif, #button-delete, #button-edit, #button-info{
+    margin: 3px;
+    max-width: 30px;
+    min-width: 20px;
+  }
+  
+  #form-add{
+    background-color:#ead6bf;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 5px 10px 10px #a47239;
+
+  }
+  
+}
+
+
+
+/*tablet*/
+@media only screen and (max-width:768px) and (min-width: 600px){
+
+  #header{
+    font-size: 50px;
+    margin: 30px 10px;
+  }
+
+  #logo{
+    font-size: 50px;
+  }
+
+  #tasks-card{
+    background-color:#ead6bf;
+    background: linear-gradient(0deg, rgb(209, 170, 126) 0%, rgba(234,214,191,1) 100%); 
+    margin: 10px;
+    padding: 15px;
+    width: 30vw;
+    box-shadow: 5px 15px 15px #a47239;
+  }
+
+  #button-add{
+    color: rgb(59, 51, 61);
+    font-size: 40px;
+    margin-top: 30px;
+    margin-left: 50%;
+  }
+
+  #button-add:hover{
+    background-color: #e4b279;
+    transition: 0.7s;
+  }
+
+  #tasks-card-name{
+    font-size: 40px;
+    font-family: 'Brush Script MT'
+  }
+
+  #tasks-card-date{
+    font-size: 15px;
+  }
+
+  #button-notif, #button-delete, #button-edit, #button-info{
+    max-width: 35px;
+    min-width: 25px;
+  }
+
+  #form-add{
+    background-color:#ead6bf;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 25px;
+    box-shadow: 5px 15px 15px #a47239;
+  }
+
+  #button-notif:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-delete:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-edit:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-info:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+}
+
+
+
+/*laptop*/
+@media only screen and (max-width:992px) and (min-width: 768px){
+
+  #header{
+    font-size: 60px;
+    margin: 40px 10px;
+  }
+
+  #logo{
+    font-size: 60px;
+  }
+
+  #tasks-card{
+    background-color:#ead6bf;
+    background: linear-gradient(0deg, rgb(209, 170, 126) 0%, rgba(234,214,191,1) 100%);    
+    margin: 15px;
+    padding: 15px;
+    width: 30vw;
+    box-shadow: 5px 15px 15px #a47239;
+  }
+
+  #button-add{
+    color: rgb(59, 51, 61);
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 40%;
+  }
+
+  #button-add:hover{
+    background-color: #e4b279;
+    transition: 0.7s;
+  }
+
+  #tasks-card-name{
+    font-size: 45px;
+    font-family: 'Brush Script MT'
+  }
+
+  #tasks-card-date{
+    font-size: 20px;
+  }
+
+  #button-notif, #button-delete, #button-edit, #button-info{
+    max-width: 15px;
+    min-width: 15px;
+  }
+
+  #form-add{
+    background-color:#ead6bf;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 5px 15px 15px #a47239;
+  }
+
+  #button-notif:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-delete:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-edit:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-info:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+}
+
+
+
+/*larger*/
+@media only screen and  (min-width: 992px){
+  
+  #header{
+    font-size: 70px;
+    margin: 40px 10px;
+  }
+
+  #noTask{
+    font-size: 30px;
+
+  }
+
+  #logo{
+    font-size: 60px;
+  }
+
+  #tasks-card{
+    background-color:#ead6bf;
+    background: linear-gradient(0deg, rgb(209, 170, 126) 0%, rgba(234,214,191,1) 100%);    
+    margin: 20px;
+    padding: 20px;
+    width: 20vw;
+    box-shadow: 5px 20px 20px #a47239;
+  }
+
+  #button-add{
+    color: rgb(59, 51, 61);
+    font-size:50px;
+    margin-top: 40px;
+    margin-left: 45%;
+  }
+
+  #button-add:hover{
+    background-color: #e4b279;
+    transition: 0.7s;
+  }
+
+  #tasks-card-name{
+    font-size: 45px;
+    font-family: 'Brush Script MT'
+  }
+
+  #tasks-card-date{
+    font-size: 20px;
+    margin: 15px
+  }
+
+  #button-notif, #button-delete, #button-edit{
+    margin: 10px 6px 3px;
+    justify-items: center;
+    min-width: 30px;
+    max-width: 50px;
+  }
+
+  #form-add{
+    background-color:#ead6bf;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 5px 20px 20px #a47239;
+
+  }
+
+  #button-notif:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-delete:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-edit:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+
+  #button-info:hover{
+    animation: jello-horizontal 0.9s both;
+  }
+}
